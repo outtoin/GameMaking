@@ -15,6 +15,12 @@
     <sprite>sprites\spt_tower</sprite>
     <sprite>sprites\spr_builder</sprite>
     <sprite>sprites\spr_materials</sprite>
+    <sprite>sprites\spr_material3</sprite>
+    <sprite>sprites\spr_material4</sprite>
+    <sprite>sprites\spr_material2</sprite>
+    <sprite>sprites\spr_building1</sprite>
+    <sprite>sprites\spt_buidling2</sprite>
+    <sprite>sprites\spt_building3</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -24,14 +30,26 @@
     <object>objects\obj_bullet</object>
     <object>objects\obj_master</object>
     <object>objects\obj_materials</object>
+    <object>objects\obj_material4</object>
+    <object>objects\obj_material3</object>
+    <object>objects\obj_material2</object>
     <object>objects\obj_player</object>
     <object>objects\obj_rock</object>
     <object>objects\obj_spawner</object>
     <object>objects\obj_text</object>
     <object>objects\obj_tower</object>
+    <object>objects\obj_tower2</object>
+    <object>objects\obj_tower3</object>
+    <object>objects\obj_tower4</object>
     <object>objects\obj_asteroid</object>
     <object>objects\obj_builder</object>
+    <object>objects\obj_portal</object>
+    <object>objects\obj_room2_start</object>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+    <room>rooms\room1</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
