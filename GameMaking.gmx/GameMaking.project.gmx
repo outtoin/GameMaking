@@ -6,21 +6,82 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="character">
+      <sprite>sprites\spr_stand_behind</sprite>
+      <sprite>sprites\spr_stand_front</sprite>
+      <sprite>sprites\spr_stand_left</sprite>
+      <sprite>sprites\spr_stand_right</sprite>
+      <sprite>sprites\spr_walk_behind</sprite>
+      <sprite>sprites\spr_walk_front</sprite>
+      <sprite>sprites\spr_walk_left</sprite>
+      <sprite>sprites\spr_walk_right</sprite>
+    </sprites>
+    <sprites name="elements">
+      <sprite>sprites\spr_dirtele</sprite>
+      <sprite>sprites\spr_fireele</sprite>
+      <sprite>sprites\spr_greenele</sprite>
+      <sprite>sprites\spr_thunderele</sprite>
+      <sprite>sprites\spr_waterele</sprite>
+    </sprites>
+    <sprite>sprites\spr_builder</sprite>
+    <sprite>sprites\spr_building1</sprite>
+    <sprite>sprites\spr_material2</sprite>
+    <sprite>sprites\spr_material3</sprite>
+    <sprite>sprites\spr_material4</sprite>
+    <sprite>sprites\spr_materials</sprite>
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_rock</sprite>
     <sprite>sprites\sprite8</sprite>
     <sprite>sprites\spt_asteroid</sprite>
+    <sprite>sprites\spt_buidling2</sprite>
+    <sprite>sprites\spt_building3</sprite>
     <sprite>sprites\spt_missle</sprite>
     <sprite>sprites\spt_spawner</sprite>
     <sprite>sprites\spt_tower</sprite>
-    <sprite>sprites\spr_builder</sprite>
-    <sprite>sprites\spr_materials</sprite>
-    <sprite>sprites\spr_material3</sprite>
-    <sprite>sprites\spr_material4</sprite>
-    <sprite>sprites\spr_material2</sprite>
-    <sprite>sprites\spr_building1</sprite>
-    <sprite>sprites\spt_buidling2</sprite>
-    <sprite>sprites\spt_building3</sprite>
+    <sprites name="tower">
+      <sprites name="fire">
+        <sprite>sprites\spr_fire1</sprite>
+        <sprite>sprites\spr_fire2</sprite>
+        <sprite>sprites\spr_fire3</sprite>
+        <sprite>sprites\spr_fire4</sprite>
+        <sprite>sprites\spr_fire5</sprite>
+        <sprite>sprites\spr_fire6</sprite>
+      </sprites>
+      <sprites name="water">
+        <sprite>sprites\spr_water1</sprite>
+        <sprite>sprites\spr_water2</sprite>
+        <sprite>sprites\spr_water3</sprite>
+        <sprite>sprites\spr_water4</sprite>
+        <sprite>sprites\spr_water5</sprite>
+        <sprite>sprites\spr_water6</sprite>
+      </sprites>
+      <sprites name="wind">
+        <sprite>sprites\spr_wind1</sprite>
+        <sprite>sprites\spr_wind2</sprite>
+        <sprite>sprites\spr_wind3</sprite>
+        <sprite>sprites\spr_wind4</sprite>
+        <sprite>sprites\spr_wind5</sprite>
+        <sprite>sprites\spr_wind6</sprite>
+      </sprites>
+      <sprites name="thunder">
+        <sprite>sprites\spr_thunder1</sprite>
+        <sprite>sprites\spr_thunder2</sprite>
+        <sprite>sprites\spr_thunder3</sprite>
+        <sprite>sprites\spr_thunder4</sprite>
+        <sprite>sprites\spr_thunder5</sprite>
+        <sprite>sprites\spr_thunder6</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="effect">
+      <sprite>sprites\spr_thunder_effect_1</sprite>
+      <sprite>sprites\spr_thunder_effect_resize</sprite>
+      <sprite>sprites\spr_fire_effect_1</sprite>
+      <sprite>sprites\spr_fire_effect_resize</sprite>
+      <sprite>sprites\spr_ice_effect_1</sprite>
+      <sprite>sprites\spr_ice_effect_resize</sprite>
+      <sprite>sprites\spr_wind_effect_1</sprite>
+      <sprite>sprites\spr_wind_effect_2</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -49,6 +110,7 @@
   <rooms name="rooms">
     <room>rooms\room0</room>
     <room>rooms\room1</room>
+    <room>rooms\rm_tmp</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
