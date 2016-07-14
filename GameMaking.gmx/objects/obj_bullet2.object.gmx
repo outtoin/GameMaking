@@ -30,6 +30,8 @@ var inst;
 inst = instance_nearest(x, y, obj_asteroid);
 move_towards_point(inst.x, inst.y, obj_bullet);
 speed = 30;
+
+global.range_bullet2 = 60;
 </string>
           </argument>
         </arguments>

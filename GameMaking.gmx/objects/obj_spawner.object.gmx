@@ -62,7 +62,9 @@ if (!instance_exists(obj_asteroid))
 
 if (random (500 - abs(sqrt(global.destroyed))) &lt; 2) 
 {
-    instance_create(x, y, obj_asteroid);
+    for(i=0 ; i&lt; global.level; i++){
+        instance_create(x+i*32, y, obj_asteroid);
+    }
 } 
 </string>
           </argument>

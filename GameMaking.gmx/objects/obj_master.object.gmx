@@ -59,14 +59,39 @@
 }
 
 
+
+with (obj_material)
+    instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
 globalvar frame;
 global.frame=0;
 
 globalvar sec;
 global.sec=0;
 
-with (obj_material)
-    instance_destroy();
+global.level++;
 </string>
           </argument>
         </arguments>
@@ -98,6 +123,8 @@ global.tower1 = 0;
 global.tower2 = 0;
 global.tower3 = 0;
 global.tower4 = 0;
+
+global.level = 0;
 </string>
           </argument>
         </arguments>

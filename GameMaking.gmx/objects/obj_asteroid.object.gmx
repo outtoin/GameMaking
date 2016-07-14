@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>life = 100;
+            <string>life = 100 * global.level;
 
 </string>
           </argument>
