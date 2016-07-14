@@ -27,14 +27,36 @@
             <kind>1</kind>
             <string>for (i = 0; i &lt; 100; i++) 
 {
-    _x = random(room_width);
-    _y = random(room_height);
-    if (!place_meeting(_x, _y, obj_rock))
-    {
-        instance_create(random(room_width), random(room_height), obj_rock);
-    }
-}
+    do{
+        randx = (random(room_width) div 32) * 32 + 16;
+        randy = (random(room_height) div 32) * 32 + 16;
+    } until (place_free(randx,randy))
+    instance_create(randx, randy, obj_rock_dirt);
 
+    do{
+        randx = (random(room_width) div 32) * 32 + 16;
+        randy = (random(room_height) div 32) * 32 + 16;
+    } until (place_free(randx,randy))
+    instance_create(randx, randy, obj_rock_fire);
+
+    do{
+        randx = (random(room_width) div 32) * 32 + 16;
+        randy = (random(room_height) div 32) * 32 + 16;
+    } until (place_free(randx,randy))
+    instance_create(randx, randy, obj_rock_green);
+
+    do{
+        randx = (random(room_width) div 32) * 32 + 16;
+        randy = (random(room_height) div 32) * 32 + 16;
+    } until (place_free(randx,randy))
+    instance_create(randx, randy, obj_rock_thunder);
+
+    do{
+        randx = (random(room_width) div 32) * 32 + 16;
+        randy = (random(room_height) div 32) * 32 + 16;
+    } until (place_free(randx,randy))
+    instance_create(randx, randy, obj_rock_water);
+}
 
 
 globalvar frame;
@@ -42,6 +64,9 @@ global.frame=0;
 
 globalvar sec;
 global.sec=0;
+
+with (obj_material)
+    instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -68,6 +93,11 @@ global.sec=0;
 global.materials2 = 30;
 global.materials3 = 40;
 global.materials4 = 20;
+
+global.tower1 = 0;
+global.tower2 = 0;
+global.tower3 = 0;
+global.tower4 = 0;
 </string>
           </argument>
         </arguments>
@@ -92,7 +122,7 @@ global.materials4 = 20;
             <kind>1</kind>
             <string>if (!instance_exists(obj_builder) )
 {
-instance_create(mouse_x, mouse_y, obj_builder);
+    instance_create(mouse_x, mouse_y, obj_builder);
 }
 
 else if (instance_exists(obj_builder))

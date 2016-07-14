@@ -24,6 +24,7 @@
       <sprite>sprites\spr_waterele</sprite>
     </sprites>
     <sprite>sprites\spr_builder</sprite>
+    <sprite>sprites\spr_builder_red</sprite>
     <sprite>sprites\spr_building1</sprite>
     <sprite>sprites\spr_material2</sprite>
     <sprite>sprites\spr_material3</sprite>
@@ -31,7 +32,7 @@
     <sprite>sprites\spr_materials</sprite>
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_rock</sprite>
-    <sprite>sprites\sprite8</sprite>
+    <sprite>sprites\spr_selected</sprite>
     <sprite>sprites\spt_asteroid</sprite>
     <sprite>sprites\spt_buidling2</sprite>
     <sprite>sprites\spt_building3</sprite>
@@ -82,33 +83,81 @@
       <sprite>sprites\spr_wind_effect_1</sprite>
       <sprite>sprites\spr_wind_effect_2</sprite>
     </sprites>
+    <sprite>sprites\spr_inventory</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <objects name="objects">
-    <object>objects\obj_bullet</object>
     <object>objects\obj_master</object>
-    <object>objects\obj_materials</object>
-    <object>objects\obj_material4</object>
-    <object>objects\obj_material3</object>
-    <object>objects\obj_material2</object>
     <object>objects\obj_player</object>
-    <object>objects\obj_rock</object>
     <object>objects\obj_spawner</object>
     <object>objects\obj_text</object>
-    <object>objects\obj_tower</object>
-    <object>objects\obj_tower2</object>
-    <object>objects\obj_tower3</object>
-    <object>objects\obj_tower4</object>
     <object>objects\obj_asteroid</object>
     <object>objects\obj_builder</object>
     <object>objects\obj_portal</object>
     <object>objects\obj_room2_start</object>
+    <objects name="rocks">
+      <object>objects\obj_rock_fire</object>
+      <object>objects\obj_rock_green</object>
+      <object>objects\obj_rock_dirt</object>
+      <object>objects\obj_rock_thunder</object>
+      <object>objects\obj_rock_water</object>
+      <object>objects\obj_rock</object>
+    </objects>
+    <objects name="materials">
+      <object>objects\obj_material_1</object>
+      <object>objects\obj_material_3</object>
+      <object>objects\obj_material_4</object>
+      <object>objects\obj_material_2</object>
+      <object>objects\obj_material</object>
+    </objects>
+    <objects name="obj_tower">
+      <object>objects\obj_tower2</object>
+      <object>objects\obj_tower3</object>
+      <object>objects\obj_tower4</object>
+      <object>objects\obj_tower</object>
+      <object>objects\obj_tower1</object>
+    </objects>
+    <object>objects\obj_gui</object>
+    <objects name="obj_slot">
+      <object>objects\obj_slot</object>
+      <object>objects\obj_slot1</object>
+      <object>objects\obj_slot2</object>
+      <object>objects\obj_slot3</object>
+      <object>objects\obj_slot4</object>
+      <object>objects\obj_slot6</object>
+      <object>objects\obj_slot7</object>
+      <object>objects\obj_slot8</object>
+      <object>objects\obj_slot9</object>
+      <object>objects\obj_slot5</object>
+      <object>objects\obj_selected_1</object>
+      <object>objects\obj_selected_2</object>
+      <object>objects\obj_selected_3</object>
+      <object>objects\obj_selected_4</object>
+    </objects>
+    <objects name="texts">
+      <object>objects\obj_text_inventory</object>
+    </objects>
+    <object>objects\obj_combine</object>
+    <objects name="bullets">
+      <object>objects\obj_bullet</object>
+      <object>objects\obj_bullet2</object>
+      <object>objects\obj_bullet3</object>
+      <object>objects\obj_bullet4</object>
+    </objects>
+    <objects name="effects">
+      <object>objects\obj_fire_effect</object>
+      <object>objects\obj_ice_effect</object>
+      <object>objects\obj_thunder_effect</object>
+      <object>objects\obj_wind_effect</object>
+    </objects>
+    <object>objects\obj_upgrader</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\rm_main</room>
     <room>rooms\room1</room>
     <room>rooms\rm_tmp</room>
   </rooms>

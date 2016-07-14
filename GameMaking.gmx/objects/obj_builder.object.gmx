@@ -51,8 +51,34 @@
             <string>//x = (mouse_x div 32) * 32 + 16;
 //y = (mouse_y div 32) * 32 + 16;
 
-x = (obj_player.x div 32) * 32 +16;
-y = (obj_player.y div 32) * 32 +16;
+
+
+//x = ((obj_player.x + 16) div 32) * 32;
+//y = ((obj_player.y + 16) div 32) * 32;
+
+switch (obj_player.direction div 90) {
+    case 0:
+        x = ((obj_player.x + 64) div 32) * 32 + 16;
+        y = ((obj_player.y) div 32) * 32 + 16;
+        break;
+    case 1:
+        x = ((obj_player.x) div 32) * 32 + 16;
+        y = ((obj_player.y - 32) div 32) * 32 - 16;
+        break;
+    case 2:
+        x = ((obj_player.x - 32) div 32) * 32 - 16;
+        y = ((obj_player.y) div 32) * 32 + 16;
+        break;
+    case 3:
+        x = ((obj_player.x) div 32) * 32 + 16;
+        y = ((obj_player.y + 64) div 32) * 32 + 16;
+        break;
+}
+
+if place_meeting(x, y, obj_tower) || place_meeting(x, y, obj_rock)
+    sprite_index = spr_builder_red;
+else
+    sprite_index = spr_builder;
 </string>
           </argument>
         </arguments>
@@ -107,10 +133,10 @@ global.materials -= 3;
     !place_meeting(x, y, obj_tower2) &amp;&amp; 
     !place_meeting(x, y, obj_tower3) &amp;&amp; 
     !place_meeting(x, y, obj_tower4) &amp;&amp; 
-    global.materials &gt;= 3
+    global.tower4 &gt;= 1
 {
 instance_create(x, y, obj_tower4);
-global.materials -= 3;
+global.tower4 -= 1;
 }
 </string>
           </argument>
@@ -138,10 +164,10 @@ global.materials -= 3;
     !place_meeting(x, y, obj_tower2) &amp;&amp; 
     !place_meeting(x, y, obj_tower3) &amp;&amp; 
     !place_meeting(x, y, obj_tower4) &amp;&amp; 
-    global.materials &gt;= 3
+    global.tower3 &gt;= 1
 {
 instance_create(x, y, obj_tower3);
-global.materials -= 3;
+global.tower3 -= 1;
 }
 </string>
           </argument>
@@ -169,10 +195,10 @@ global.materials -= 3;
     !place_meeting(x, y, obj_tower2) &amp;&amp; 
     !place_meeting(x, y, obj_tower3) &amp;&amp; 
     !place_meeting(x, y, obj_tower4) &amp;&amp; 
-    global.materials &gt;= 3
+    global.tower2 &gt;= 1
 {
 instance_create(x, y, obj_tower2);
-global.materials -= 3;
+global.tower2 -= 1;
 }
 </string>
           </argument>
@@ -197,14 +223,14 @@ global.materials -= 3;
           <argument>
             <kind>1</kind>
             <string>if 
-    !place_meeting(x, y, obj_tower) &amp;&amp; 
+    !place_meeting(x, y, obj_tower1) &amp;&amp; 
     !place_meeting(x, y, obj_tower2) &amp;&amp; 
     !place_meeting(x, y, obj_tower3) &amp;&amp; 
     !place_meeting(x, y, obj_tower4) &amp;&amp; 
-    global.materials &gt;= 3
+    global.tower1 &gt;= 1
 {
-instance_create(x, y, obj_tower);
-global.materials -= 3;
+instance_create(x, y, obj_tower1);
+global.tower1 -= 1;
 }
 </string>
           </argument>
