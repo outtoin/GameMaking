@@ -27,8 +27,10 @@
             <kind>1</kind>
             <string>global.destroyed = 0;
 
-x = room_width / 2;
+x = room_width - 32;
 y = room_height / 2;
+
+lv = 0;
 </string>
           </argument>
         </arguments>

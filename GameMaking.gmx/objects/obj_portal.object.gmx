@@ -56,7 +56,7 @@ if global.frame % 30 ==0 {
           </argument>
           <argument>
             <kind>0</kind>
-            <string>30</string>
+            <string>4</string>
           </argument>
           <argument>
             <kind>4</kind>
