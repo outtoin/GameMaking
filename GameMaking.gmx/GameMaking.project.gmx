@@ -89,7 +89,6 @@
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\obj_master</object>
     <object>objects\obj_player</object>
