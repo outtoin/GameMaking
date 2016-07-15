@@ -84,6 +84,8 @@
       <sprite>sprites\spr_wind_effect_2</sprite>
     </sprites>
     <sprite>sprites\spr_inventory</sprite>
+    <sprite>sprites\spr_hp_container</sprite>
+    <sprite>sprites\spr_hp_gage</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -154,6 +156,7 @@
       <object>objects\obj_wind_effect</object>
     </objects>
     <object>objects\obj_upgrader</object>
+    <object>objects\obj_hp_gage</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
