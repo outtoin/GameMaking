@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>life = 100 * global.level;
+            <string>life = 100;
+moving_speed = 1
 
 </string>
           </argument>
@@ -56,7 +57,7 @@ mp_grid_add_instances(grid, obj_tower2, 1);
 mp_grid_add_instances(grid, obj_tower3, 1);
 mp_grid_add_instances(grid, obj_tower4, 1);
 mp_grid_path(grid, path, x, y, 64, room_height / 2, 1);
-path_start(path, 1, "", 1);
+path_start(path, moving_speed, "", 1);
 
 
 if (life &lt;= 0) 

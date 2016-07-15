@@ -31,6 +31,8 @@ x = room_width - 32;
 y = room_height / 2;
 
 lv = 0;
+
+spawned = 0;
 </string>
           </argument>
         </arguments>
@@ -53,7 +55,7 @@ lv = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/*
 if (!instance_exists(obj_asteroid))
 {
     instance_create(x, y, obj_asteroid);
@@ -65,7 +67,21 @@ if (random (500 - abs(sqrt(global.destroyed))) &lt; 2)
     for(i=0 ; i&lt; global.level; i++){
         instance_create(x+i*32, y, obj_asteroid);
     }
-} 
+} */ 
+
+if global.destroyed == 20 {
+    global.destroyed = 0;
+    room_goto(0);
+}
+
+if (!place_meeting(x, y, obj_asteroid)) {
+    if (spawned &lt; 20) {
+        inst = instance_create(x, y, obj_asteroid);
+        inst.life = 100 + global.level * global.level;
+        inst.soeed = 1 + global.level * 0.1;
+        spawned++;
+    }
+}
 </string>
           </argument>
         </arguments>
