@@ -87,6 +87,8 @@
     <sprite>sprites\spr_inventory</sprite>
     <sprite>sprites\spr_hp_container</sprite>
     <sprite>sprites\spr_hp_gage</sprite>
+    <sprite>sprites\spr_tutorial</sprite>
+    <sprite>sprites\spr_tutorial2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -159,6 +161,8 @@
     </objects>
     <object>objects\obj_upgrader</object>
     <object>objects\obj_hp_gage</object>
+    <object>objects\obj_tutorial</object>
+    <object>objects\obj_tutorial2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
