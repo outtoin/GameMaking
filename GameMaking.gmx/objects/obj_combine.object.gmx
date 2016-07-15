@@ -93,7 +93,7 @@ else if (selected == 13  and global.materials &gt;= 1 and global.materials3 &gt;
     global.materials3--
     global.materials4--
 }
-else if (selected == 14  and global.material2 &gt;= 1 and global.materials3 &gt;= 1 and global.materials4 &gt;= 1) {
+else if (selected == 14  and global.materials2 &gt;= 1 and global.materials3 &gt;= 1 and global.materials4 &gt;= 1) {
     global.tower4++
     global.materials2--
     global.materials3--
