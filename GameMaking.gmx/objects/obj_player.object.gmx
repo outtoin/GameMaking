@@ -528,7 +528,7 @@ if instance_exists(obj_rock) {
     if distance_to_object(inst) &lt; 10 {
         inst.hp = inst.hp - 1
         if(!instance_exists(hp_bar) || hp_bar == self)
-            hp_bar = instance_create(inst.x,inst.y-12,obj_hp_gage)
+            hp_bar = instance_create(inst.x,inst.y-22,obj_hp_gage)
         if(instance_exists(hp_bar))
         {
             hp_bar.max_hp = 3.0
