@@ -75,25 +75,25 @@ chosen[3] = 0;
           <argument>
             <kind>1</kind>
             <string>
-if selected == 7 {
+if (selected == 7 and global.materials &gt;= 1 and global.materials2 &gt;= 1 and global.materials3 &gt;= 1) {
     global.tower1++
     global.materials--
     global.materials2--
     global.materials3--
 }
-else if selected == 11 {
+else if (selected == 11 and global.materials &gt;= 1 and global.materials2 &gt;= 1 and global.materials4 &gt;= 1) {
     global.tower2++
     global.materials--
     global.materials2--
     global.materials4--
 }
-else if selected == 13 {
+else if (selected == 13  and global.materials &gt;= 1 and global.materials3 &gt;= 1 and global.materials4 &gt;= 1) {
     global.tower3++
     global.materials--
     global.materials3--
     global.materials4--
 }
-else if selected == 14 {
+else if (selected == 14  and global.materials2 &gt;= 1 and global.materials3 &gt;= 1 and global.materials4 &gt;= 1) {
     global.tower4++
     global.materials2--
     global.materials3--

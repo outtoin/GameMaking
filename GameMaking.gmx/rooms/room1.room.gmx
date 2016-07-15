@@ -7,7 +7,7 @@
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code></code>
@@ -69,12 +69,15 @@
     <instance objName="obj_selected_3" x="176" y="402" name="inst_95050E7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_selected_4" x="208" y="402" name="inst_8EE47754" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawner" x="672" y="256" name="inst_2A716201" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+<<<<<<< HEAD
     <instance objName="obj_tower1" x="32" y="288" name="inst_78C8451C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tower2" x="448" y="192" name="inst_CD0AF2B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tower3" x="160" y="256" name="inst_E184F3A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tower4" x="544" y="320" name="inst_CD9D002B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_asteroid" x="576" y="224" name="inst_1F7778DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tutorial2" x="608" y="192" name="inst_922C5CDC" locked="0" code="" scaleX="0.593350410461426" scaleY="0.604081630706787" colour="4294967295" rotation="0"/>
+=======
+>>>>>>> f586d63d8b58cfd71c7ef5dc17cb46b8ffa82e80
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

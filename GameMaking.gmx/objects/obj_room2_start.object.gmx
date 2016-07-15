@@ -132,7 +132,13 @@ draw_text (view_xview + 128, view_yview + 32, global.level);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(obj_builder) )
+            <string>if(instance_exists(obj_upgrader))
+{
+  with(obj_upgrader)
+    instance_destroy();
+}
+
+if (!instance_exists(obj_builder) )
 {
     instance_create(obj_player.x, obj_player.y, obj_builder);
     instance_create(obj_player.x, obj_player.y, obj_range);
@@ -170,7 +176,15 @@ with (obj_builder)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(obj_upgrader) )
+            <string>if(instance_exists(obj_builder))
+{
+  with(obj_builder)
+    instance_destroy();
+  with(obj_range)
+    instance_destroy();
+}
+
+if (!instance_exists(obj_upgrader) )
 {
     instance_create(mouse_x, mouse_y, obj_upgrader);
 }

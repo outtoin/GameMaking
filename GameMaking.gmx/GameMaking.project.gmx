@@ -31,6 +31,28 @@
     <sprite>sprites\spr_material3</sprite>
     <sprite>sprites\spr_material4</sprite>
     <sprite>sprites\spr_materials</sprite>
+    <sprites name="enemies">
+      <sprites name="normal">
+        <sprite>sprites\spr_enemy1</sprite>
+        <sprite>sprites\spr_enemy2</sprite>
+        <sprite>sprites\spr_enemy3</sprite>
+        <sprite>sprites\spr_enemy4</sprite>
+        <sprite>sprites\spr_enemy5</sprite>
+        <sprite>sprites\spr_enemy6</sprite>
+        <sprite>sprites\spr_enemy7</sprite>
+        <sprite>sprites\spr_enemy8</sprite>
+        <sprite>sprites\spr_enemy9</sprite>
+        <sprite>sprites\spr_enemy10</sprite>
+        <sprite>sprites\spr_enemy11</sprite>
+        <sprite>sprites\spr_enemy12</sprite>
+        <sprite>sprites\spr_enemy13</sprite>
+      </sprites>
+      <sprites name="boss">
+        <sprite>sprites\spr_boss1</sprite>
+        <sprite>sprites\spr_boss2</sprite>
+        <sprite>sprites\spr_boss3</sprite>
+      </sprites>
+    </sprites>
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_rock</sprite>
     <sprite>sprites\spr_selected</sprite>
@@ -87,8 +109,48 @@
     <sprite>sprites\spr_inventory</sprite>
     <sprite>sprites\spr_hp_container</sprite>
     <sprite>sprites\spr_hp_gage</sprite>
+<<<<<<< HEAD
     <sprite>sprites\spr_tutorial</sprite>
     <sprite>sprites\spr_tutorial2</sprite>
+=======
+    <sprites name="material">
+      <sprite>sprites\spr_dirt_material</sprite>
+      <sprite>sprites\spr_thunder_material</sprite>
+      <sprite>sprites\spr_ice_material</sprite>
+      <sprite>sprites\spr_wind_material</sprite>
+      <sprite>sprites\spr_fire_material</sprite>
+    </sprites>
+    <sprites name="magical_circle">
+      <sprite>sprites\spr_magicircle_black</sprite>
+      <sprite>sprites\spr_magicircle_blue</sprite>
+      <sprite>sprites\spr_magicircle2</sprite>
+    </sprites>
+    <sprite>sprites\spr_dirt_wall</sprite>
+    <sprites name="map_design">
+      <sprites name="tree">
+        <sprite>sprites\spr_tree_orange</sprite>
+        <sprite>sprites\spr_tree_orange_yellow</sprite>
+        <sprite>sprites\spr_tree_yellow</sprite>
+        <sprite>sprites\spr_tree_light_green</sprite>
+        <sprite>sprites\spr_tree_green</sprite>
+        <sprite>sprites\spr_tree_dark_green</sprite>
+        <sprite>sprites\spr_tree_emerald</sprite>
+      </sprites>
+      <sprites name="forest">
+        <sprite>sprites\spr_forest_orange</sprite>
+        <sprite>sprites\spr_forest_orange_yellow</sprite>
+        <sprite>sprites\spr_forest_yellow</sprite>
+        <sprite>sprites\spr_forest_light_green</sprite>
+        <sprite>sprites\spr_forest_green</sprite>
+        <sprite>sprites\spr_forest_dark_green</sprite>
+        <sprite>sprites\spr_forest_emerald</sprite>
+        <sprite>sprites\spr_forest_purple</sprite>
+      </sprites>
+      <sprites name="grass">
+        <sprite>sprites\spr_trees_orange</sprite>
+      </sprites>
+    </sprites>
+>>>>>>> f586d63d8b58cfd71c7ef5dc17cb46b8ffa82e80
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -161,8 +223,22 @@
     </objects>
     <object>objects\obj_upgrader</object>
     <object>objects\obj_hp_gage</object>
+<<<<<<< HEAD
     <object>objects\obj_tutorial</object>
     <object>objects\obj_tutorial2</object>
+=======
+    <objects name="map_design">
+      <objects name="tree">
+        <object>objects\obj_tree_orange</object>
+      </objects>
+      <objects name="grass">
+        <object>objects\obj_trees_orange</object>
+      </objects>
+      <objects name="forest">
+        <object>objects\obj_forest_orange</object>
+      </objects>
+    </objects>
+>>>>>>> f586d63d8b58cfd71c7ef5dc17cb46b8ffa82e80
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
