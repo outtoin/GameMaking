@@ -109,6 +109,10 @@
     <sprite>sprites\spr_inventory</sprite>
     <sprite>sprites\spr_hp_container</sprite>
     <sprite>sprites\spr_hp_gage</sprite>
+<<<<<<< HEAD
+    <sprite>sprites\spr_tutorial</sprite>
+    <sprite>sprites\spr_tutorial2</sprite>
+=======
     <sprites name="material">
       <sprite>sprites\spr_dirt_material</sprite>
       <sprite>sprites\spr_thunder_material</sprite>
@@ -146,9 +150,13 @@
         <sprite>sprites\spr_trees_orange</sprite>
       </sprites>
     </sprites>
+<<<<<<< HEAD
     <sprite>sprites\spr_tuto</sprite>
     <sprite>sprites\spr_tuto2</sprite>
     <sprite>sprites\spr_goal</sprite>
+=======
+>>>>>>> f586d63d8b58cfd71c7ef5dc17cb46b8ffa82e80
+>>>>>>> origin/master
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -221,6 +229,10 @@
     </objects>
     <object>objects\obj_upgrader</object>
     <object>objects\obj_hp_gage</object>
+<<<<<<< HEAD
+    <object>objects\obj_tutorial</object>
+    <object>objects\obj_tutorial2</object>
+=======
     <objects name="map_design">
       <objects name="tree">
         <object>objects\obj_tree_orange</object>
@@ -232,9 +244,13 @@
         <object>objects\obj_forest_orange</object>
       </objects>
     </objects>
+<<<<<<< HEAD
     <object>objects\obj_tuto2</object>
     <object>objects\obj_tuto</object>
     <object>objects\obj_goal</object>
+=======
+>>>>>>> f586d63d8b58cfd71c7ef5dc17cb46b8ffa82e80
+>>>>>>> origin/master
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
