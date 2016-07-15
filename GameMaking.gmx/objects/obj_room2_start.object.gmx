@@ -151,6 +151,8 @@ with (obj_builder)
 {
   with(obj_builder)
     instance_destroy();
+  with(obj_range)
+    instance_destroy();
 }
 
 if (!instance_exists(obj_upgrader) )

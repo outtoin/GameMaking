@@ -78,6 +78,7 @@ if (!place_meeting(x, y, obj_asteroid)) {
     if (spawned &lt; 20) {
         inst = instance_create(x, y, obj_asteroid);
         inst.life = 100 + global.level * global.level;
+        inst.max_hp = inst.life
         inst.soeed = 1 + global.level * 0.1;
         spawned++;
     }

@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>life = 100;
+            <string>hp_bar = self
+
+max_hp = 100;
+life = 100;
 moving_speed = 1
 
 </string>
@@ -60,6 +63,13 @@ mp_grid_path(grid, path, x, y, 64, room_height / 2, 1);
 path_start(path, moving_speed, "", 1);
 
 
+if(instance_exists(hp_bar) and hp_bar != self)
+{
+    hp_bar.timer--
+    hp_bar.x = x
+    hp_bar.y = y - 35
+}
+
 if (life &lt;= 0) 
 {
     instance_destroy();
@@ -87,7 +97,22 @@ if (life &lt;= 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>life = life - 10;
+            <string>life = life - other.damage;
+
+if(!instance_exists(hp_bar) || hp_bar == self)
+    hp_bar = instance_create(x,y-35,obj_hp_gage)
+if(instance_exists(hp_bar))
+{
+    hp_bar.max_hp = max_hp
+    hp_bar.current_hp = life
+}
+
+if(life &lt;= 0)
+{
+    with(hp_bar)
+        instance_destroy();
+    hp_bar = self;
+}
 </string>
           </argument>
         </arguments>
