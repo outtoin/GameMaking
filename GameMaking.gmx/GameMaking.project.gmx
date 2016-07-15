@@ -122,6 +122,31 @@
       <sprite>sprites\spr_magicircle2</sprite>
     </sprites>
     <sprite>sprites\spr_dirt_wall</sprite>
+    <sprites name="map_design">
+      <sprites name="tree">
+        <sprite>sprites\spr_tree_orange</sprite>
+        <sprite>sprites\spr_tree_orange_yellow</sprite>
+        <sprite>sprites\spr_tree_yellow</sprite>
+        <sprite>sprites\spr_tree_light_green</sprite>
+        <sprite>sprites\spr_tree_green</sprite>
+        <sprite>sprites\spr_tree_dark_green</sprite>
+        <sprite>sprites\spr_tree_emerald</sprite>
+        <sprite>sprites\spr_tree_purple</sprite>
+      </sprites>
+      <sprites name="forest">
+        <sprite>sprites\spr_forest_orange</sprite>
+        <sprite>sprites\spr_forest_orange_yellow</sprite>
+        <sprite>sprites\spr_forest_yellow</sprite>
+        <sprite>sprites\spr_forest_light_green</sprite>
+        <sprite>sprites\spr_forest_green</sprite>
+        <sprite>sprites\spr_forest_dark_green</sprite>
+        <sprite>sprites\spr_forest_emerald</sprite>
+        <sprite>sprites\spr_forest_purple</sprite>
+      </sprites>
+      <sprites name="grass">
+        <sprite>sprites\spr_trees_orange</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -194,6 +219,17 @@
     </objects>
     <object>objects\obj_upgrader</object>
     <object>objects\obj_hp_gage</object>
+    <objects name="map_design">
+      <objects name="tree">
+        <object>objects\obj_tree_orange</object>
+      </objects>
+      <objects name="grass">
+        <object>objects\obj_trees_orange</object>
+      </objects>
+      <objects name="forest">
+        <object>objects\obj_forest_orange</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
