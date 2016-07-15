@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if place_meeting(x, y, obj_rock)
+            <string>hp = 3.0
+
+if place_meeting(x, y, obj_rock)
     instance_destroy();
 </string>
           </argument>
