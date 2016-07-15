@@ -72,6 +72,11 @@ if (random (500 - abs(sqrt(global.destroyed))) &lt; 2)
 if (global.destroyed == 20 or (!instance_exists(obj_asteroid) and global.destroyed &gt;= 1)){
     global.destroyed = 0;
     spawned = 0;
+    if global.level == 10
+    {
+      global.level = 11;
+      game_end()
+    }
     room_goto(0);
 }
 

@@ -25,13 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.frame++;
+            <string>if !instance_exists(obj_tuto){
+
+global.frame++;
 
 if global.frame % 30 ==0 {
     global.sec++;
 }
 
-
+}
 </string>
           </argument>
         </arguments>

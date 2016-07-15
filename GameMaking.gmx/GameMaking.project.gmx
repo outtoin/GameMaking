@@ -146,6 +146,9 @@
         <sprite>sprites\spr_trees_orange</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\spr_tuto</sprite>
+    <sprite>sprites\spr_tuto2</sprite>
+    <sprite>sprites\spr_goal</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -229,6 +232,9 @@
         <object>objects\obj_forest_orange</object>
       </objects>
     </objects>
+    <object>objects\obj_tuto2</object>
+    <object>objects\obj_tuto</object>
+    <object>objects\obj_goal</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>

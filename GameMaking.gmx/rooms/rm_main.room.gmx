@@ -60,6 +60,7 @@
     <instance objName="obj_trees_orange" x="128" y="64" name="inst_37CA65B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trees_orange" x="128" y="32" name="inst_BB7D8003" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_orange" x="128" y="32" name="inst_ED9235F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tuto" x="352" y="256" name="inst_741CD9BB" locked="0" code="" scaleX="0.659003853797913" scaleY="0.676171064376831" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
