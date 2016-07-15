@@ -16,6 +16,16 @@
       <sprite>sprites\spr_walk_left</sprite>
       <sprite>sprites\spr_walk_right</sprite>
     </sprites>
+    <sprites name="effect">
+      <sprite>sprites\spr_thunder_effect_1</sprite>
+      <sprite>sprites\spr_thunder_effect_resize</sprite>
+      <sprite>sprites\spr_fire_effect_1</sprite>
+      <sprite>sprites\spr_fire_effect_resize</sprite>
+      <sprite>sprites\spr_ice_effect_1</sprite>
+      <sprite>sprites\spr_ice_effect_resize</sprite>
+      <sprite>sprites\spr_wind_effect_1</sprite>
+      <sprite>sprites\spr_wind_effect_2</sprite>
+    </sprites>
     <sprites name="elements">
       <sprite>sprites\spr_dirtele</sprite>
       <sprite>sprites\spr_fireele</sprite>
@@ -23,14 +33,6 @@
       <sprite>sprites\spr_thunderele</sprite>
       <sprite>sprites\spr_waterele</sprite>
     </sprites>
-    <sprite>sprites\spr_builder</sprite>
-    <sprite>sprites\spr_range</sprite>
-    <sprite>sprites\spr_builder_red</sprite>
-    <sprite>sprites\spr_building1</sprite>
-    <sprite>sprites\spr_material2</sprite>
-    <sprite>sprites\spr_material3</sprite>
-    <sprite>sprites\spr_material4</sprite>
-    <sprite>sprites\spr_materials</sprite>
     <sprites name="enemies">
       <sprites name="normal">
         <sprite>sprites\spr_enemy1</sprite>
@@ -53,7 +55,79 @@
         <sprite>sprites\spr_boss3</sprite>
       </sprites>
     </sprites>
+    <sprites name="magical_circle">
+      <sprite>sprites\spr_magicircle_black</sprite>
+      <sprite>sprites\spr_magicircle_blue</sprite>
+      <sprite>sprites\spr_magicircle2</sprite>
+    </sprites>
+    <sprites name="map_design">
+      <sprites name="tree">
+        <sprite>sprites\spr_tree_orange</sprite>
+        <sprite>sprites\spr_tree_orange_yellow</sprite>
+        <sprite>sprites\spr_tree_yellow</sprite>
+        <sprite>sprites\spr_tree_light_green</sprite>
+        <sprite>sprites\spr_tree_green</sprite>
+        <sprite>sprites\spr_tree_dark_green</sprite>
+        <sprite>sprites\spr_tree_emerald</sprite>
+        <sprite>sprites\spr_tree_purple</sprite>
+      </sprites>
+      <sprites name="forest">
+        <sprite>sprites\spr_forest_orange</sprite>
+        <sprite>sprites\spr_forest_orange_yellow</sprite>
+        <sprite>sprites\spr_forest_yellow</sprite>
+        <sprite>sprites\spr_forest_light_green</sprite>
+        <sprite>sprites\spr_forest_green</sprite>
+        <sprite>sprites\spr_forest_dark_green</sprite>
+        <sprite>sprites\spr_forest_emerald</sprite>
+        <sprite>sprites\spr_forest_purple</sprite>
+      </sprites>
+      <sprites name="trees">
+        <sprite>sprites\spr_trees_orange</sprite>
+        <sprite>sprites\spr_trees_orange_yellow</sprite>
+        <sprite>sprites\spr_trees_yellow</sprite>
+        <sprite>sprites\spr_trees_light_green</sprite>
+        <sprite>sprites\spr_trees_green</sprite>
+        <sprite>sprites\spr_trees_dark_green</sprite>
+        <sprite>sprites\spr_trees_emerald</sprite>
+        <sprite>sprites\spr_trees_purple</sprite>
+      </sprites>
+      <sprites name="map_elements">
+        <sprites name="fire">
+          <sprite>sprites\spr_fire_ground1</sprite>
+          <sprite>sprites\spr_fire_ground2</sprite>
+          <sprite>sprites\spr_fire_ground3</sprite>
+          <sprite>sprites\spr_lava_1</sprite>
+          <sprite>sprites\spr_lava_2</sprite>
+          <sprite>sprites\spr_lava_3</sprite>
+          <sprite>sprites\spr_lava_4</sprite>
+          <sprite>sprites\spr_lava_5</sprite>
+          <sprite>sprites\spr_lava_6</sprite>
+          <sprite>sprites\spr_lava_7</sprite>
+          <sprite>sprites\spr_lava_8</sprite>
+          <sprite>sprites\spr_lava_9</sprite>
+        </sprites>
+      </sprites>
+    </sprites>
+    <sprites name="material">
+      <sprite>sprites\spr_dirt_material</sprite>
+      <sprite>sprites\spr_thunder_material</sprite>
+      <sprite>sprites\spr_ice_material</sprite>
+      <sprite>sprites\spr_wind_material</sprite>
+      <sprite>sprites\spr_fire_material</sprite>
+    </sprites>
+    <sprite>sprites\spr_builder</sprite>
+    <sprite>sprites\spr_builder_red</sprite>
+    <sprite>sprites\spr_building1</sprite>
+    <sprite>sprites\spr_dirt_wall</sprite>
+    <sprite>sprites\spr_hp_container</sprite>
+    <sprite>sprites\spr_hp_gage</sprite>
+    <sprite>sprites\spr_inventory</sprite>
+    <sprite>sprites\spr_material2</sprite>
+    <sprite>sprites\spr_material3</sprite>
+    <sprite>sprites\spr_material4</sprite>
+    <sprite>sprites\spr_materials</sprite>
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_range</sprite>
     <sprite>sprites\spr_rock</sprite>
     <sprite>sprites\spr_selected</sprite>
     <sprite>sprites\spt_asteroid</sprite>
@@ -96,70 +170,11 @@
         <sprite>sprites\spr_thunder6</sprite>
       </sprites>
     </sprites>
-    <sprites name="effect">
-      <sprite>sprites\spr_thunder_effect_1</sprite>
-      <sprite>sprites\spr_thunder_effect_resize</sprite>
-      <sprite>sprites\spr_fire_effect_1</sprite>
-      <sprite>sprites\spr_fire_effect_resize</sprite>
-      <sprite>sprites\spr_ice_effect_1</sprite>
-      <sprite>sprites\spr_ice_effect_resize</sprite>
-      <sprite>sprites\spr_wind_effect_1</sprite>
-      <sprite>sprites\spr_wind_effect_2</sprite>
-    </sprites>
-    <sprite>sprites\spr_inventory</sprite>
-    <sprite>sprites\spr_hp_container</sprite>
-    <sprite>sprites\spr_hp_gage</sprite>
-<<<<<<< HEAD
-    <sprite>sprites\spr_tutorial</sprite>
-    <sprite>sprites\spr_tutorial2</sprite>
-=======
-    <sprites name="material">
-      <sprite>sprites\spr_dirt_material</sprite>
-      <sprite>sprites\spr_thunder_material</sprite>
-      <sprite>sprites\spr_ice_material</sprite>
-      <sprite>sprites\spr_wind_material</sprite>
-      <sprite>sprites\spr_fire_material</sprite>
-    </sprites>
-    <sprites name="magical_circle">
-      <sprite>sprites\spr_magicircle_black</sprite>
-      <sprite>sprites\spr_magicircle_blue</sprite>
-      <sprite>sprites\spr_magicircle2</sprite>
-    </sprites>
-    <sprite>sprites\spr_dirt_wall</sprite>
-    <sprites name="map_design">
-      <sprites name="tree">
-        <sprite>sprites\spr_tree_orange</sprite>
-        <sprite>sprites\spr_tree_orange_yellow</sprite>
-        <sprite>sprites\spr_tree_yellow</sprite>
-        <sprite>sprites\spr_tree_light_green</sprite>
-        <sprite>sprites\spr_tree_green</sprite>
-        <sprite>sprites\spr_tree_dark_green</sprite>
-        <sprite>sprites\spr_tree_emerald</sprite>
-      </sprites>
-      <sprites name="forest">
-        <sprite>sprites\spr_forest_orange</sprite>
-        <sprite>sprites\spr_forest_orange_yellow</sprite>
-        <sprite>sprites\spr_forest_yellow</sprite>
-        <sprite>sprites\spr_forest_light_green</sprite>
-        <sprite>sprites\spr_forest_green</sprite>
-        <sprite>sprites\spr_forest_dark_green</sprite>
-        <sprite>sprites\spr_forest_emerald</sprite>
-        <sprite>sprites\spr_forest_purple</sprite>
-      </sprites>
-      <sprites name="grass">
-        <sprite>sprites\spr_trees_orange</sprite>
-      </sprites>
-    </sprites>
-<<<<<<< HEAD
-    <sprite>sprites\spr_tuto</sprite>
-    <sprite>sprites\spr_tuto2</sprite>
-    <sprite>sprites\spr_goal</sprite>
-=======
->>>>>>> f586d63d8b58cfd71c7ef5dc17cb46b8ffa82e80
->>>>>>> origin/master
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\background1</background>
+    <background>background\background2</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -229,33 +244,55 @@
     </objects>
     <object>objects\obj_upgrader</object>
     <object>objects\obj_hp_gage</object>
-<<<<<<< HEAD
-    <object>objects\obj_tutorial</object>
-    <object>objects\obj_tutorial2</object>
-=======
     <objects name="map_design">
       <objects name="tree">
         <object>objects\obj_tree_orange</object>
+        <object>objects\obj_tree_orange_yellow</object>
+        <object>objects\obj_tree_yellow</object>
+        <object>objects\obj_tree_light_green</object>
+        <object>objects\obj_tree_green</object>
+        <object>objects\obj_tree_dark_green</object>
+        <object>objects\obj_tree_emerald</object>
+        <object>objects\obj_tree_purple</object>
       </objects>
-      <objects name="grass">
+      <objects name="trees">
         <object>objects\obj_trees_orange</object>
+        <object>objects\obj_trees_orange_yellow</object>
+        <object>objects\obj_trees_yellow</object>
+        <object>objects\obj_trees_light_green</object>
+        <object>objects\obj_trees_green</object>
+        <object>objects\obj_trees_dark_green</object>
+        <object>objects\obj_trees_emerald</object>
+        <object>objects\obj_trees_purple</object>
       </objects>
       <objects name="forest">
         <object>objects\obj_forest_orange</object>
+        <object>objects\obj_forest_orange_yellow</object>
+        <object>objects\obj_forest_yellow</object>
+        <object>objects\obj_forest_light_green</object>
+        <object>objects\obj_forest_green</object>
+        <object>objects\obj_forest_dark_green</object>
+        <object>objects\obj_forest_emerald</object>
+        <object>objects\obj_forest_purple</object>
+      </objects>
+      <objects name="fire">
+        <object>objects\obj_fire_ground2</object>
+        <object>objects\obj_fire_ground3</object>
+        <object>objects\obj_lava_1</object>
+        <object>objects\obj_lava_2</object>
+        <object>objects\obj_lava_3</object>
+        <object>objects\obj_lava_4</object>
+        <object>objects\obj_lava_5</object>
+        <object>objects\obj_lava_6</object>
+        <object>objects\obj_lava_7</object>
+        <object>objects\obj_lava_8</object>
+        <object>objects\obj_lava_9</object>
       </objects>
     </objects>
-<<<<<<< HEAD
-    <object>objects\obj_tuto2</object>
-    <object>objects\obj_tuto</object>
-    <object>objects\obj_goal</object>
-=======
->>>>>>> f586d63d8b58cfd71c7ef5dc17cb46b8ffa82e80
->>>>>>> origin/master
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_main</room>
+    <room>rooms\room3</room>
     <room>rooms\room1</room>
-    <room>rooms\rm_tmp</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

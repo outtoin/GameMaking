@@ -3,7 +3,7 @@
   <spriteName>spr_fire1</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1001</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>obj_tower</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -49,7 +49,7 @@ lv = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>frequ = (frequ + 1) % (35 - lv * 4);
+            <string>frequ = (frequ + 1) % (35 - lv * 5);
 
 if (instance_exists(obj_asteroid) &amp;&amp; frequ == 0)
 {
