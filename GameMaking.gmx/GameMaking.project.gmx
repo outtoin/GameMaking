@@ -121,6 +121,7 @@
       <sprite>sprites\spr_magicircle_blue</sprite>
       <sprite>sprites\spr_magicircle2</sprite>
     </sprites>
+    <sprite>sprites\spr_dirt_wall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
