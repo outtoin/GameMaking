@@ -53,7 +53,9 @@ lv = 1;
 
 if (instance_exists(obj_asteroid) &amp;&amp; frequ == 0)
 {
-    instance_create(x, y, obj_bullet2);
+    if distance_to_object(obj_asteroid)&lt; 150{
+        instance_create(x, y, obj_bullet2);
+    }
 }
 </string>
           </argument>
