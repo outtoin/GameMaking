@@ -25,13 +25,25 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.frame++;
+<<<<<<< HEAD
+            <string>if !instance_exists(obj_tuto){
+
+global.frame++;
 
 if global.frame % 30 ==0 {
     global.sec++;
 }
 
+=======
+            <string>if !instance_exists(obj_tutorial){
+    global.frame++;
 
+    if global.frame % 30 ==0 {
+        global.sec++;
+    }
+
+>>>>>>> origin/master
+}
 </string>
           </argument>
         </arguments>

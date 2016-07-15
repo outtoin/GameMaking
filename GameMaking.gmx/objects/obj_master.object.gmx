@@ -67,6 +67,33 @@ with (obj_material)
         </arguments>
       </action>
     </event>
+    <event eventtype="5" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if instance_exists(obj_tutorial){
+    with (obj_tutorial){
+        instance_destroy();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
@@ -114,10 +141,11 @@ global.level++;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.materials = 33;
-global.materials2 = 30;
-global.materials3 = 40;
-global.materials4 = 20;
+            <string>randomize();
+global.materials = 0;
+global.materials2 = 0;
+global.materials3 = 0;
+global.materials4 = 0;
 
 global.tower1 = 0;
 global.tower2 = 0;
@@ -125,6 +153,8 @@ global.tower3 = 0;
 global.tower4 = 0;
 
 global.level = 0;
+
+instance_create(view_xview + view_wport / 2, view_yview + view_hport / 2,obj_tutorial);
 </string>
           </argument>
         </arguments>

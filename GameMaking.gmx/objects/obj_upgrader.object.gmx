@@ -73,46 +73,114 @@ else
             <string>
 if place_meeting(x, y, obj_tower1) {
     inst = instance_place(x, y, obj_tower1)
-    if inst.lv == 1 {
-        inst.sprite_index = spr_fire4
+    if (inst.lv == 1 and global.tower1 &gt;= 1){
+        global.tower1 -= 1;
+        inst.sprite_index = spr_fire2
         inst.lv = 2
     }
-    else if inst.lv == 2 {
-        inst.sprite_index = spr_fire6
+    else if (inst.lv == 2 and global.tower1 &gt;= 1) {
+        global.tower1 -= 1;
+        inst.sprite_index = spr_fire3
         inst.lv = 3
+    }
+    else if (inst.lv == 3 and global.tower1 &gt;= 1) {
+        global.tower1 -= 1;
+        inst.sprite_index = spr_fire4
+        inst.lv = 4
+    }
+    else if (inst.lv == 4 and global.tower1 &gt;= 1) {
+        global.tower1 -= 1;
+        inst.sprite_index = spr_fire5
+        inst.lv = 5
+    }
+    else if (inst.lv == 5 and global.tower1 &gt;= 1) {
+        global.tower1 -= 1;
+        inst.sprite_index = spr_fire6
+        inst.lv = 6
     }
 }
 else if place_meeting(x, y, obj_tower2) {
     inst = instance_place(x, y, obj_tower2)
-    if inst.lv == 1 {
-        inst.sprite_index = spr_water4
+    if (inst.lv == 1 and global.tower2 &gt;= 1) {
+        global.tower2 -= 1
+        inst.sprite_index = spr_water2
         inst.lv = 2
     }
-    else if inst.lv == 2 {
-        inst.sprite_index = spr_water6
+    else if (inst.lv == 2 and global.tower2 &gt;= 1){
+        global.tower2 -= 1
+        inst.sprite_index = spr_water3
         inst.lv = 3
+    }
+    else if (inst.lv == 3 and global.tower2 &gt;= 1){
+        global.tower2 -= 1
+        inst.sprite_index = spr_water4
+        inst.lv = 4
+    }
+    else if (inst.lv == 4 and global.tower2 &gt;= 1){
+        global.tower2 -= 1
+        inst.sprite_index = spr_water5
+        inst.lv = 5
+    }
+    else if (inst.lv == 5 and global.tower2 &gt;= 1){
+        global.tower2 -= 1
+        inst.sprite_index = spr_water6
+        inst.lv = 6
     }
 }
 else if place_meeting(x, y, obj_tower3) {
     inst = instance_place(x, y, obj_tower3)
-    if inst.lv == 1 {
-        inst.sprite_index = spr_wind4
+    if (inst.lv == 1 and global.tower3 &gt;= 1){
+        global.tower3 -= 1
+        inst.sprite_index = spr_wind2
         inst.lv = 2
     }
-    else if inst.lv == 2 {
-        inst.sprite_index = spr_wind6
+    else if (inst.lv == 2 and global.tower3 &gt;= 1){
+        global.tower3 -= 1
+        inst.sprite_index = spr_wind3
         inst.lv = 3
+    }
+    else if (inst.lv == 3 and global.tower3 &gt;= 1){
+        global.tower3 -= 1
+        inst.sprite_index = spr_wind4
+        inst.lv = 4
+    }
+    else if (inst.lv == 4 and global.tower3 &gt;= 1){
+        global.tower3 -= 1
+        inst.sprite_index = spr_wind5
+        inst.lv = 5
+    }
+    else if (inst.lv == 5 and global.tower3 &gt;= 1){
+        global.tower3 -= 1
+        inst.sprite_index = spr_wind6
+        inst.lv = 6
     }
 }
 else if place_meeting(x, y, obj_tower4) {
     inst = instance_place(x, y, obj_tower4)
-    if inst.lv == 1 {
-        inst.sprite_index = spr_thunder4
+    if (inst.lv == 1 and global.tower4 &gt;= 1){
+        global.tower4 -= 1
+        inst.sprite_index = spr_thunder2
         inst.lv = 2
     }
-    else if inst.lv == 2 {
-        inst.sprite_index = spr_thunder6
+    else if (inst.lv == 2 and global.tower4 &gt;= 1){
+        global.tower4 -= 1
+        inst.sprite_index = spr_thunder3
         inst.lv = 3
+    }
+    else if (inst.lv == 3 and global.tower4 &gt;= 1){
+        global.tower4 -= 1
+        inst.sprite_index = spr_thunder4
+        inst.lv = 4
+    }
+    else if (inst.lv == 4 and global.tower4 &gt;= 1){
+        global.tower4 -= 1
+        inst.sprite_index = spr_thunder5
+        inst.lv = 5
+    }
+    else if (inst.lv == 5 and global.tower4 &gt;= 1){
+        global.tower4 -= 1
+        inst.sprite_index = spr_thunder6
+        inst.lv = 6
     }
 }
     
