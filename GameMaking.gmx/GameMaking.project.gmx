@@ -31,6 +31,28 @@
     <sprite>sprites\spr_material3</sprite>
     <sprite>sprites\spr_material4</sprite>
     <sprite>sprites\spr_materials</sprite>
+    <sprites name="enemies">
+      <sprites name="normal">
+        <sprite>sprites\spr_enemy1</sprite>
+        <sprite>sprites\spr_enemy2</sprite>
+        <sprite>sprites\spr_enemy3</sprite>
+        <sprite>sprites\spr_enemy4</sprite>
+        <sprite>sprites\spr_enemy5</sprite>
+        <sprite>sprites\spr_enemy6</sprite>
+        <sprite>sprites\spr_enemy7</sprite>
+        <sprite>sprites\spr_enemy8</sprite>
+        <sprite>sprites\spr_enemy9</sprite>
+        <sprite>sprites\spr_enemy10</sprite>
+        <sprite>sprites\spr_enemy11</sprite>
+        <sprite>sprites\spr_enemy12</sprite>
+        <sprite>sprites\spr_enemy13</sprite>
+      </sprites>
+      <sprites name="boss">
+        <sprite>sprites\spr_boss1</sprite>
+        <sprite>sprites\spr_boss2</sprite>
+        <sprite>sprites\spr_boss3</sprite>
+      </sprites>
+    </sprites>
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_rock</sprite>
     <sprite>sprites\spr_selected</sprite>
@@ -87,6 +109,18 @@
     <sprite>sprites\spr_inventory</sprite>
     <sprite>sprites\spr_hp_container</sprite>
     <sprite>sprites\spr_hp_gage</sprite>
+    <sprites name="material">
+      <sprite>sprites\spr_dirt_material</sprite>
+      <sprite>sprites\spr_thunder_material</sprite>
+      <sprite>sprites\spr_ice_material</sprite>
+      <sprite>sprites\spr_wind_material</sprite>
+      <sprite>sprites\spr_fire_material</sprite>
+    </sprites>
+    <sprites name="magical_circle">
+      <sprite>sprites\spr_magicircle_black</sprite>
+      <sprite>sprites\spr_magicircle_blue</sprite>
+      <sprite>sprites\spr_magicircle2</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
