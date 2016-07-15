@@ -131,7 +131,6 @@
         <sprite>sprites\spr_tree_green</sprite>
         <sprite>sprites\spr_tree_dark_green</sprite>
         <sprite>sprites\spr_tree_emerald</sprite>
-        <sprite>sprites\spr_tree_purple</sprite>
       </sprites>
       <sprites name="forest">
         <sprite>sprites\spr_forest_orange</sprite>
