@@ -114,10 +114,11 @@ global.level++;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.materials = 33;
-global.materials2 = 30;
-global.materials3 = 40;
-global.materials4 = 20;
+            <string>randomize();
+global.materials = 0;
+global.materials2 = 0;
+global.materials3 = 0;
+global.materials4 = 0;
 
 global.tower1 = 0;
 global.tower2 = 0;

@@ -69,18 +69,19 @@ if (random (500 - abs(sqrt(global.destroyed))) &lt; 2)
     }
 } */ 
 
-if global.destroyed == 20 {
+if (global.destroyed == 20 or (!instance_exists(obj_asteroid) and global.destroyed &gt;= 1)){
     global.destroyed = 0;
+    spawned = 0;
     room_goto(0);
 }
 
 if (!place_meeting(x, y, obj_asteroid)) {
     if (spawned &lt; 20) {
         inst = instance_create(x, y, obj_asteroid);
-        inst.life = 100 + global.level * global.level;
+        inst.life = 5 + global.level * global.level * 2;
         inst.max_hp = inst.life
-        inst.moving_speed = 1 + global.level * 0.1;
-        rand = random(10)
+        inst.moving_speed = 0.7 + global.level * 0.1;
+        rand = random(9)
         switch (floor(rand)) {
             case 0:
                 inst.sprite_index = spr_enemy2; break;
